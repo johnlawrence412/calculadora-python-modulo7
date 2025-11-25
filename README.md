@@ -1,4 +1,4 @@
-# calculadora-python-modulo7
+# Calculadora en Python – Módulo 7
 
 - `Operaciones.py`: módulo con las funciones matemáticas.
 - `main.py`: programa principal que interactúa con el usuario.
@@ -21,66 +21,65 @@ Suma(1)
 Resta(2)
 Multiplicación(3)
 División(4)
+````
 
-El usuario puede escribir el número o el nombre de la operación
-(por ejemplo: 1 o suma, 2 o resta, etc.).
+El usuario puede escribir **el número o el nombre** de la operación
+(por ejemplo: `1` o `suma`, `2` o `resta`, etc.).
 
-Estructura del código
-Operaciones.py
+---
+
+## Estructura del código
+
+### `Operaciones.py`
 
 Contiene las funciones:
 
-sumar(a, b)
+* `sumar(a, b)`
+* `restar(a, b)`
+* `multiplicar(a, b)`
+* `dividir(a, b)` → valida que el divisor no sea cero y lanza `ValueError` si `b == 0`.
 
-restar(a, b)
+### `main.py`
 
-multiplicar(a, b)
+* Pide al usuario los dos números.
+* Muestra el menú de operaciones con el formato `Suma(1)`, `Resta(2)`, etc.
+* Permite ingresar la operación por número o por nombre.
+* Llama a la función correspondiente del módulo `Operaciones`.
+* Muestra el resultado en pantalla.
+* Incluye validaciones:
 
-dividir(a, b) → valida que el divisor no sea cero y lanza ValueError si b == 0.
+  * Manejo de entradas no numéricas usando `try/except`.
+  * Verificación de que la operación exista.
+  * Manejo de división entre cero capturando la excepción de `Operaciones.dividir`.
+* Utiliza un bucle para que el usuario pueda realizar varias operaciones hasta que decida salir.
 
-main.py
+---
 
-Pide al usuario los dos números.
+## Requisitos
 
-Muestra el menú de operaciones con el formato Suma(1), Resta(2), etc.
+* Python 3.x instalado en el sistema.
 
-Permite ingresar la operación por número o por nombre.
+---
 
-Llama a la función correspondiente del módulo Operaciones.
+## Cómo ejecutar el programa
 
-Muestra el resultado en pantalla.
+1. Clonar el repositorio:
 
-Incluye validaciones:
+   ```bash
+   git clone https://github.com/johnlawrence412/calculadora-python-modulo7.git
+   cd calculadora-python-modulo7
+   ```
 
-Manejo de entradas no numéricas usando try/except.
+2. Ejecutar el archivo principal:
 
-Verificación de que la operación exista.
+   ```bash
+   python main.py
+   ```
 
-Manejo de división entre cero capturando la excepción de Operaciones.dividir.
+3. Seguir las instrucciones en pantalla:
 
-Utiliza un bucle para que el usuario pueda realizar varias operaciones hasta que decida salir.
+   * Ingresar los dos números.
+   * Elegir la operación (por número o por nombre).
+   * Decidir si desea realizar otra operación o salir.
 
-Requisitos
-
-Python 3.x instalado en el sistema.
-
-Cómo ejecutar el programa
-
-Clonar el repositorio:
-
-git clone https://github.com/johnlawrence412/calculadora-python-modulo7.git
-cd calculadora-python-modulo7
-
-
-Ejecutar el archivo principal:
-
-python main.py
-
-
-Seguir las instrucciones en pantalla:
-
-Ingresar los dos números.
-
-Elegir la operación (por número o por nombre).
-
-Decidir si desea realizar otra operación o salir.
+```
