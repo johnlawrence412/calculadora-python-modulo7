@@ -81,5 +81,3 @@ Contiene las funciones:
    * Ingresar los dos números.
    * Elegir la operación (por número o por nombre).
    * Decidir si desea realizar otra operación o salir.
-
-```
